@@ -1,0 +1,12 @@
+{
+    "headerUa": "Вішалка",
+    "descriptionUa": "Знайдіть приховане слово - Введіть літеру",
+    "notificationUa": "Ви вже вводили цю літеру",
+    "headerEn": "Hangman",
+    "btnUa": "Зіграти ще раз",
+    "balanseUa": "Баланс:",
+    "descriptionEn": "Find the hidden word - Enter a letter",
+    "notificationEn": "You have already entered this letter",
+    "btnEn": "Play Again",
+    "balanseEn": "Balance:"
+}
