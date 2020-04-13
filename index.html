@@ -16,14 +16,13 @@
     <div id="settings" class="settings">
         <form id="settings-form">
             <div class="language">
-                <!-- <label for="difficulty" class="label-settings">Language</label> -->
                 <input type="radio" id="ua" name="language" value="ua" hidden>
                 <label for="ua">
                     <img src="img/ukraine-flag.svg" alt="Ukraine flag">
                 </label>
                 <input type="radio" id="en" name="language" value="hb" hidden>
                 <label for="en">
-                    <img src="img/united-states-flag.png" alt="English flag">
+                    <img src="img/united-states-of-america.svg" alt="American flag">
                 </label>
             </div>
         </form>
@@ -73,11 +72,15 @@
     </div>
     <div class="balanse-container">
         <p class="balanse">Balance:</p>
+    <div class="USD-currency">
         <input type="number" readonly id="amount-one" class="balanse-amound" value="10" />
-        </span><input type="text" value="USD" readonly id="currency-one" placeholder="USD">
+        <input type="text" value="USD" readonly id="currency-one" placeholder="USD">
+        </div>
+<div class="UAH-currency">
         <input type="number" readonly number id="amount-two" />
         <input type="text" value="UAH" readonly id="currency-two" placeholder="UAN">
-        <div class="rate" id="rate"></div>
+        </div>
+        <div class="rate" id="rate"></div> 
     </div>
     <script src="js/index.js"></script>
 </body>

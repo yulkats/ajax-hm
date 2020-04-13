@@ -22,17 +22,16 @@ const currencyEl_two = document.getElementById('currency-two');
 const amountEl_two = document.getElementById('amount-two');
 
 const rateEl = document.getElementById('rate');
-currencyEl_two.hidden = true;
-amountEl_two.hidden = true;
+const uahCurrency = document.querySelector('.UAH-currency');
+const usdCurrency = document.querySelector('.USD-currency');
+uahCurrency.hidden = true;
 let words = ['application', 'programming', 'interface', 'wizard'];
 
 async function uaLanguag() {
   words = ['застосування', 'програмування', 'інтерфейс', 'майстер'];
   restart();
-  currencyEl_two.hidden = false;
-  amountEl_two.hidden = false;
-  currencyEl_one.hidden = true;
-  amountEl_one.hidden = true;
+uahCurrency.hidden = false;
+  usdCurrency.hidden = true;
   const response = await fetch('client-data.json');
   const data = await response.json();
   document.querySelector('.header').innerText = data.headerUa;
@@ -45,10 +44,8 @@ async function uaLanguag() {
 async function enLanguag() {
   words = ['application', 'programming', 'interface', 'wizard'];
   restart();
-  currencyEl_one.hidden = false;
-  amountEl_one.hidden = false;
-  currencyEl_two.hidden = true;
-  amountEl_two.hidden = true;
+uahCurrency.hidden = true;
+usdCurrency.hidden = false;
   const response = await fetch('client-data.json');
   const data = await response.json();
   document.querySelector('.header').innerText = data.headerEn;
@@ -198,10 +195,10 @@ document
   .addEventListener('click', () => settings.classList.toggle('hide'));
 
 function minusMoney() {
-  balance.push(-10);
+  balance.push(-5);
 }
 function plusMoney() {
-  balance.push(10);
+  balance.push(5);
 }
 
 function balanceResult() {
